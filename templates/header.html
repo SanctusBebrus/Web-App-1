@@ -1,0 +1,25 @@
+  {% extends "index.html" %}
+  {% block header %}
+  <header id="header">
+    <div class="container">
+
+      <h1><a>GIGACHAD.Team</a></h1>
+      <h2>{{ tag1 }} <span>{{ tag2 }}</span></h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li>
+              <a class="nav-link active" href="#header">{{ sect1 }}</a></li>
+        </ul>
+          <button onclick="window.location.href='http://127.0.0.1:8000/snake';" style="border:1px solid black; background-color: transparent;">python</button>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <div class="social-links">
+        <a href="{{ github }}" class="github"><i class="fa fa-github"></i></a>
+        <a href="{{ email }}" class="email"><i class="fa fa-envelope"></i></a>
+      </div>
+
+    </div>
+  </header>
+  {% endblock %}
