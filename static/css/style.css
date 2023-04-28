@@ -126,41 +126,6 @@ h1, h2, h3, h4, h5, h6 {
     outline: none;
 }
 
-/* Header Top */
-#header.header-top {
-  height: 80px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.9);
-}
-#header.header-top .social-links, #header.header-top h2 {
-  display: none;
-}
-#header.header-top h1 {
-  margin-right: auto;
-  font-size: 36px;
-}
-#header.header-top .container {
-  display: flex;
-  align-items: center;
-}
-#header.header-top .navbar {
-  margin: 0;
-}
-@media (max-width: 768px) {
-  #header.header-top {
-    height: 60px;
-  }
-  #header.header-top h1 {
-    font-size: 26px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
