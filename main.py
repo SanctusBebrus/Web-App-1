@@ -13,19 +13,10 @@ app.config.from_object(__name__)
 
 @app.route('/')
 def index():
-    posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
-    posts.sort(key=lambda item: item['date'], reverse=True)
     with open('settings.json', encoding='utf8') as config:
         data = config.read()
         settings = json.loads(data)
     return render_template('index.html', posts=posts, bigheader=True, **settings)
-
-
-@app.route('/posts/<name>/')
-def post(name):
-    path = f'{POST_DIR}/{name}'
-    post = flatpages.get_or_404(path)
-    return render_template('post.html', post=post)
 
 
 @app.route('/snake')
